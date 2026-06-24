@@ -1,0 +1,66 @@
+<h2>首页布局 & 播放器设计</h2>
+<p class="subtitle">首页是用户打开 App 看到的第一屏内容，播放器是核心功能。</p>
+
+<h3 style="margin-top: 24px;">首页布局方案</h3>
+
+<div class="options">
+  <div class="option" data-choice="cards" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>卡片式瀑布流</h3>
+      <p>推荐内容以不同尺寸的卡片展示，瀑布流布局，视觉丰富，发现感强。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="horizontal-scroll" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>横向轮播 + 分类列表（推荐）</h3>
+      <p>顶部 Banner 轮播，下方横向滚动的推荐专辑，再下面是分类列表。信息层次清晰。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="grid" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>网格化图标导航</h3>
+      <p>类似应用商店首页，图标+文字网格布局，快速直达各个功能入口。</p>
+    </div>
+  </div>
+</div>
+
+<h3 style="margin-top: 24px;">播放器样式</h3>
+
+<div class="options" data-multiselect>
+  <div class="option" data-choice="mini-player" onclick="toggleSelect(this)">
+    <div class="letter">1</div>
+    <div class="content">
+      <h3>迷你播放器（底部常驻）</h3>
+      <p>播放时底部显示一个小条，展示封面、书名、播放/暂停按钮，点击展开全屏播放器。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="fullscreen-player" onclick="toggleSelect(this)">
+    <div class="letter">2</div>
+    <div class="content">
+      <h3>全屏沉浸式播放器</h3>
+      <p>全屏展示封面大图、章节进度、播放控制，可下滑收起。支持歌词显示、倍速、定时等。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="lock-widget" onclick="toggleSelect(this)">
+    <div class="letter">3</div>
+    <div class="content">
+      <h3>锁屏/通知栏控件</h3>
+      <p>支持系统锁屏界面和通知栏的播放控制，通知栏显示封面+进度条+控制按钮。</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="background-play" onclick="toggleSelect(this)">
+    <div class="letter">4</div>
+    <div class="content">
+      <h3>后台播放</h3>
+      <p>切换到其他 App 或锁屏后继续播放，完美的后台音频体验。</p>
+    </div>
+  </div>
+</div>
