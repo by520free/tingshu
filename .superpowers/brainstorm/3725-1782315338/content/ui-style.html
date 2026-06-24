@@ -1,0 +1,56 @@
+<h2>听书 App UI 设计风格选择</h2>
+<p class="subtitle">全面复刻版需要一个美观、现代化的界面设计。请问你更偏好哪种风格？</p>
+
+<div class="options">
+  <div class="option" data-choice="material3" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Material Design 3（推荐）</h3>
+      <p>Google 官方现代设计语言，圆角卡片 + 动态配色 + 毛玻璃效果。简洁优雅，符合当下审美趋势。</p>
+      <div style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;">
+        <span class="label" style="background: #6750A4; color: white; padding: 4px 12px; border-radius: 16px;">紫色主题</span>
+        <span class="label" style="background: #E8DEF8; color: #1D1B20; padding: 4px 12px; border-radius: 16px;">圆角卡片</span>
+        <span class="label" style="background: #F3EDF7; color: #1D1B20; padding: 4px 12px; border-radius: 16px;">动态取色</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="bookshelf" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>书架风格</h3>
+      <p>木质书架纹理、书籍封面立体效果、翻页动画。有书房的沉浸氛围感，适合喜欢阅读氛围的用户。</p>
+      <div style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;">
+        <span class="label" style="background: #8B4513; color: white; padding: 4px 12px; border-radius: 16px;">木质纹理</span>
+        <span class="label" style="background: #D2691E; color: white; padding: 4px 12px; border-radius: 16px;">立体封面</span>
+        <span class="label" style="background: #F5DEB3; color: #5D4037; padding: 4px 12px; border-radius: 16px;">翻页动效</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="minimal" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>极简阅读风</h3>
+      <p>大量留白，柔和配色，专注内容本身。类似微信读书、掌阅等阅读类 App 的简洁风格。</p>
+      <div style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;">
+        <span class="label" style="background: #FAFAFA; color: #333; padding: 4px 12px; border-radius: 16px;">极简留白</span>
+        <span class="label" style="background: #E0E0E0; color: #333; padding: 4px 12px; border-radius: 16px;">柔和配色</span>
+        <span class="label" style="background: #F5F5F5; color: #666; padding: 4px 12px; border-radius: 16px;">内容优先</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="dark" onclick="toggleSelect(this)">
+    <div class="letter">D</div>
+    <div class="content">
+      <h3>暗色科技风</h3>
+      <p>深色主题为主，霓虹渐变点缀。酷炫有未来感，适合夜间使用，保护眼睛的同时提供沉浸体验。</p>
+      <div style="display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap;">
+        <span class="label" style="background: #1A1A2E; color: #E94560; padding: 4px 12px; border-radius: 16px;">深色背景</span>
+        <span class="label" style="background: linear-gradient(90deg, #667eea, #764ba2); color: white; padding: 4px 12px; border-radius: 16px;">霓虹渐变</span>
+        <span class="label" style="background: #16213E; color: #00D9FF; padding: 4px 12px; border-radius: 16px;">科技感</span>
+      </div>
+    </div>
+  </div>
+</div>
