@@ -1,0 +1,79 @@
+<h2>App 导航结构设计</h2>
+<p class="subtitle">用户如何浏览和切换不同的功能模块？</p>
+
+<div class="options">
+  <div class="option" data-choice="bottom-tabs" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>底部 Tab 导航（推荐）</h3>
+      <p>最经典的导航方式，底部 4-5 个图标标签，点击切换。操作方便，单手操作友好。</p>
+      <div class="mockup" style="margin-top: 16px;">
+        <div class="mockup-body">
+          <div style="display: flex; justify-content: space-around; padding: 12px; background: #F3EDF7; border-radius: 16px;">
+            <div style="text-align: center;">
+              <div style="font-size: 24px;">🏠</div>
+              <div style="font-size: 10px; color: #6750A4;">首页</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 24px;">🔍</div>
+              <div style="font-size: 10px; color: #666;">搜索</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 24px;">📚</div>
+              <div style="font-size: 10px; color: #666;">分类</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 24px;">❤️</div>
+              <div style="font-size: 10px; color: #666;">书架</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 24px;">👤</div>
+              <div style="font-size: 10px; color: #666;">我的</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="drawer" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>侧边抽屉导航</h3>
+      <p>汉堡菜单从左侧滑出，界面更简洁但多一步操作。适合功能模块较多的 App。</p>
+      <div class="mockup" style="margin-top: 16px;">
+        <div class="mockup-body">
+          <div style="display: flex; height: 120px; background: #F3EDF7; border-radius: 12px; overflow: hidden;">
+            <div style="width: 60%; background: white; display: flex; align-items: center; justify-content: center; color: #666;">主内容区</div>
+            <div style="width: 40%; background: #6750A4; display: flex; flex-direction: column; padding: 16px; color: white;">
+              <div style="margin-bottom: 12px;">☰ 菜单</div>
+              <div style="font-size: 12px; margin-bottom: 8px;">首页</div>
+              <div style="font-size: 12px; margin-bottom: 8px;">搜索</div>
+              <div style="font-size: 12px; margin-bottom: 8px;">分类</div>
+              <div style="font-size: 12px;">我的</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="single" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>单页 + 底部悬浮播放器</h3>
+      <p>首页作为唯一主页面，通过底部固定的迷你播放器 + 抽屉展开的全屏播放器来控制播放。</p>
+      <div class="mockup" style="margin-top: 16px;">
+        <div class="mockup-body">
+          <div style="display: flex; flex-direction: column; height: 120px; background: #F3EDF7; border-radius: 12px; overflow: hidden;">
+            <div style="flex: 1; display: flex; align-items: center; justify-content: center; color: #666;">首页内容</div>
+            <div style="background: #6750A4; padding: 8px 16px; display: flex; align-items: center; color: white; border-radius: 0 0 12px 12px;">
+              <div style="flex: 1; font-size: 12px;">正在播放: 书名...</div>
+              <div style="font-size: 16px;">▶️</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
