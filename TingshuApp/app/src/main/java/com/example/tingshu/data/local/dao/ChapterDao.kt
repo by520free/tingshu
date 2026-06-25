@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface ChapterDao {
 
-    @Query("SELECT * FROM chapters WHERE bookId = :bookId ORDER BY index ASC")
+    @Query("SELECT * FROM chapters WHERE bookId = :bookId ORDER BY chapterIndex ASC")
     fun getChaptersByBookId(bookId: String): Flow<List<ChapterEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

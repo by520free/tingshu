@@ -20,6 +20,8 @@ import androidx.compose.material.icons.filled.Download
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.List
+import androidx.compose.material.icons.filled.Pause
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.SkipNext
 import androidx.compose.material.icons.filled.SkipPrevious
 import androidx.compose.material.icons.filled.Timer
@@ -236,9 +238,9 @@ fun PlayerScreen(
                     ) {
                         Icon(
                             imageVector = if (playerState.isPlaying) {
-                                androidx.compose.material.icons.Icons.Default.Pause
+                                Icons.Filled.Pause
                             } else {
-                                androidx.compose.material.icons.Icons.Default.PlayArrow
+                                Icons.Filled.PlayArrow
                             },
                             contentDescription = if (playerState.isPlaying) "暂停" else "播放",
                             tint = PrimaryPurple,
@@ -316,7 +318,7 @@ fun PlayerScreen(
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(8.dp),
-                        verticalAlignment = Alignment.CenterHorizontally
+                        verticalAlignment = Alignment.CenterVertically
                     ) {
                         speedOptions.forEach { speed ->
                             Box(

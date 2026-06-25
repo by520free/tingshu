@@ -9,6 +9,6 @@ data class ChapterEntity(
     val bookId: String,
     val title: String,
     val url: String,
-    val index: Int,
+    val chapterIndex: Int,
     val audioUrl: String? = null
 )

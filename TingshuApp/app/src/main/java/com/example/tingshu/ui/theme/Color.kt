@@ -17,6 +17,14 @@ val Purple90 = Color(0xFFEADDFF)
 val Purple95 = Color(0xFFF6EDFF)
 val Purple99 = Color(0xFFFFFBFE)
 
+val PurpleGrey20 = Color(0xFF332D41)
+val PurpleGrey30 = Color(0xFF4A4458)
+val PurpleGrey90 = Color(0xFFE8DEF8)
+
+val Pink20 = Color(0xFF492532)
+val Pink30 = Color(0xFF633B48)
+val Pink90 = Color(0xFFFFD8E4)
+
 val PrimaryPurple = Color(0xFF7C4DFF)
 val PrimaryPurpleDark = Color(0xFF651FFF)
 val SecondaryPurple = Color(0xFFB388FF)
